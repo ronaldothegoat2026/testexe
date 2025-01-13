@@ -9,6 +9,6 @@ $formData = @{
     document = Get-Item -Path $filePath
 }
 
-$response = Invoke-RestMethod -Uri $apiUrl -Method Post -Form $formData
+$response = Invoke-RestMethod -Uri $apiUrl -Method Post -Body $formData
 
 $response
